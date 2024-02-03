@@ -11,11 +11,12 @@ function Perfil() {
   return (
     <div>
       <p>
-        Perfil
+        Usuários:
         {usuarios?.map((usuario, index) => (
           <div key={index}>
             <p>{usuario.nome}</p>
             <p>{usuario.email}</p>
+            <br />
           </div>
         ))}
       </p>
